@@ -3,3 +3,4 @@ pandas
 numpy
 Image
 joblib
+scikit-learn
