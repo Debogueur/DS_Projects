@@ -6,7 +6,7 @@ from PIL import Image
 
 #load the model from disk
 import joblib
-model = joblib.load(r"finalized_model.sav")
+model = joblib.load("finalized_model.sav")
 def apply_scalar_conversion(temp_df,predict_type):
 
     from sklearn.preprocessing import StandardScaler,MinMaxScaler
