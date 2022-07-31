@@ -11,7 +11,6 @@ def apply_scalar_conversion(temp_df,predict_type):
 
     from sklearn.preprocessing import StandardScaler,MinMaxScaler
     scaler = StandardScaler()
-    min_max_scaler = MinMaxScaler()
     if 'churn' in temp_df.columns:
         temp_df = temp_df.drop(columns=["churn"])
     data = temp_df.drop(columns=['international_plan','voice_mail_plan'])
