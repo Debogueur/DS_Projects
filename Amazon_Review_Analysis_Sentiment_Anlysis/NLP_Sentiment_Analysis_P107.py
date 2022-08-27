@@ -24,6 +24,8 @@ global col1, col2,col3
 col1, col2,col3 = st.columns([3,1,1]) 
 w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
 lemmatizer = nltk.stem.WordNetLemmatizer()
+
+
 def remove_tags(string):
     removelist = ""
     result = re.sub(r'^RT[\s]+', '', string)
