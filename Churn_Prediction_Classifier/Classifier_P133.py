@@ -7,10 +7,10 @@ from PIL import Image
 #load the model from disk
 import joblib
 #Github
-model = joblib.load(r"Churn_Prediction_Classifier/finalized_model.sav")
+# model = joblib.load(r"Churn_Prediction_Classifier/finalized_model.sav")
 #
 #Local
-# model = joblib.load(r"finalized_model.sav")
+model = joblib.load(r"finalized_model.sav")
 def apply_scalar_conversion(temp_df,predict_type):
 
     from sklearn.preprocessing import StandardScaler,MinMaxScaler
@@ -47,9 +47,9 @@ def main():
 
     #Setting Application sidebar default
     #Github
-    image = Image.open('Churn_Prediction_Classifier/app.jpg')
+    # image = Image.open('Churn_Prediction_Classifier/app.jpg')
     #Local
-    # image = Image.open('app.jpg')
+    image = Image.open('app.jpg')
     add_selectbox = st.sidebar.selectbox(
     "How would you like to predict?", ("Online", "Batch"))
     st.sidebar.image(image)
