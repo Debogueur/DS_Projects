@@ -19,7 +19,6 @@ dfIndivudal = pd.DataFrame()
 global col1, col2,col3
 col1, col2,col3 = st.columns([3,1,1]) 
 
-
 def download_stocks_history(stksybl):
     stock_final = pd.DataFrame()
     stock_symbol = stksybl 
